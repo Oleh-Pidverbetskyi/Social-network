@@ -1,0 +1,39 @@
+.dialog {
+  &__wrap {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas: "dialog__nameList dialog__messageList";
+  }
+
+  &__nameList {
+    padding: 20px;
+    border: 2px solid rgba(134, 134, 134, 0.5);
+    grid-area: dialog__nameList;
+    border-radius: 20px;
+  }
+  &__messageList {
+    padding: 20px;
+    border: 2px solid rgb(134, 134, 134, 0.5);
+    grid-area: dialog__messageList;
+    border-radius: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  &__message{
+    resize: none;
+  }
+  &__btn {
+    display: block;
+  }
+}
+
+.active {
+  color: gold;
+}

@@ -1,0 +1,23 @@
+.navigation {
+  grid-area: nav;
+  background-color: rgba(27, 147, 216, 0.808);
+
+  &__list {
+    padding: 20px;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    &-active {
+      color: gold;
+    }
+  }
+}
